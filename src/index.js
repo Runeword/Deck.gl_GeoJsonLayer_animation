@@ -170,14 +170,14 @@ map.on("load", () => {
       ]
     },
     extruded: true,
-    elevationScale: 5,
+    elevationScale: 1,
     getElevation: ({properties}) => {
           console.log('properties', properties)
           return properties.h
     },
     transitions: {
       elevationScale: {
-        duration: 1000,
+        duration: 500,
         type: 'interpolation'
       }
     },
